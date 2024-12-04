@@ -11,8 +11,8 @@ public class OpenBrowserTest {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://en.wikipedia.org/wiki/Gmail");
-		Thread.sleep(10000);
-		driver.close();
+		Thread.sleep(5000);
+		driver.quit();
 	}
 
 }
