@@ -11,7 +11,15 @@ public class OpenBrowserTest {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://en.wikipedia.org/wiki/Gmail");
-		Thread.sleep(5000);
+		Thread.sleep(3000);
+		driver.quit();
+	}
+	@Test
+	public void t2() throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://en.wikipedia.org/wiki/facebook");
+		Thread.sleep(3000);
 		driver.quit();
 	}
 
